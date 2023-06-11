@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+
+:root{
+    --RoyalBlue: #4169E1;
+    --MidnightBlue: #191970;
+    --blue: #2796ee;
+    --skyBkue: #87CEEB;
+    --ice: #d2e1e5;
+    --shadow: #3e464e;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: x-large;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(to top, var(--ice), var(--RoyalBlue));
+}
+
+header h1{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    padding: 30px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    gap: 15px;
+    border: 3px solid;
+    border-radius: 7px;
+    box-shadow: 0 5px 50px var(--shadow);
+    height: 50vh;
+    min-height: 200px;
+    width: 100vw;
+    max-width: 400px;
+    background-color: var(--ice);
+}
+
+main div{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.senha{
+    outline: none;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: var(--MidnightBlue);
+}
+
+.check{
+    -webkit-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: #3e464e solid;
+}
+
+.check:checked{
+    background-color: var(--RoyalBlue);
+}
+
+.tamanho-senha{
+    -webkit-appearance: none;
+    appearance: none;
+    accent-color: blue;
+    outline: none;
+    width: 75%;
+    height: 9px;
+    margin-left: 15px;
+    border-radius: 9px;
+    border: 1px solid;
+    background: linear-gradient(90deg, rgb(255, 255, 255) 60%, rgb(255, 255, 255) 60%)
+}
+
+.tamanho-senha::-webkit-slider-thumb {
+    cursor: pointer;
+    appearance: none;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%; 
+    background: var(--blue);
+}
+
+.tamanho-senha::-moz-range-progress{
+    background-color: rgb(100, 100, 100);
+}
+
+.bt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gerar-senha{
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    background-color: var(--blue);
+    border-radius: 10px;
+}
